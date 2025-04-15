@@ -1,0 +1,249 @@
+.section-about-hero {
+  background-color: #fff;
+  border-bottom: 3px solid #000;
+}
+
+.heading_primary__about,
+.heading_secondary__about {
+  color: #000;
+  text-transform: uppercase;
+}
+
+.heading_secondary__about {
+  width: 80%;
+  line-height: 1;
+}
+
+.paragraph__about {
+  color: #000;
+  margin-top: 40rem;
+  font-size: 2rem;
+}
+
+.btn__about {
+  color: #000;
+}
+
+/* SECTION ABOUT */
+
+.section-about-linda {
+  padding: 10rem 0;
+  background-image: url("../img/pexels-duhews-dfbas-1095146367-23910016.jpg");
+  background-position: 60% center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  border-bottom: 3px solid #000;
+}
+
+.section-about-linda::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.section-about-linda > * {
+  position: relative;
+  z-index: 2;
+}
+
+.about-paragraph {
+  line-height: 1.5;
+  color: #fff;
+  font-weight: 300;
+}
+
+/* SECTION HISTORY */
+
+.section-history-linda {
+  padding: 15rem 0;
+  border-bottom: 3px solid #000;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.row-h4 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  width: 20%;
+  line-height: 1.2;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+}
+
+.row-p {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #000;
+}
+
+.row {
+  border-bottom: 2px solid #000;
+  padding-bottom: 2rem;
+}
+
+/* SECTION GRID IMAGES */
+
+.section-grid-images {
+  padding: 15rem 0;
+}
+
+.grid-images {
+  width: 55%;
+  height: 200rem;
+  margin-inline: auto;
+  display: grid;
+  grid-template-areas:
+    "a a a a"
+    "a a a a"
+    "a a a a"
+    "a a a a"
+    "b b c c"
+    "b b c c"
+    "b b c c"
+    "d d e e"
+    "d d e e"
+    "d d e e"
+    "f f e e"
+    "f f e e";
+  gap: 1rem;
+}
+
+.grid-img-fig {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.grid-img-fig:hover {
+  cursor: pointer;
+}
+
+.grid-img-fig span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.3s ease;
+  z-index: 3;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 500;
+}
+
+.grid-img-fig:hover span {
+  opacity: 1;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.grid-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+.grid-img:hover {
+  transform: scale(1.05);
+  opacity: 0.85;
+}
+
+#a {
+  grid-area: a;
+}
+
+#a img {
+  object-position: center 20%;
+}
+
+#b {
+  grid-area: b;
+}
+
+#c {
+  grid-area: c;
+}
+
+#c img {
+  object-position: center 20%;
+}
+
+#d {
+  grid-area: d;
+}
+
+#e {
+  grid-area: e;
+}
+
+#f {
+  grid-area: f;
+}
+
+#f span {
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Lightbox styles */
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.lightbox.active {
+  display: flex;
+  opacity: 1;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90vh;
+  object-fit: contain;
+  transform: scale(0.8);
+  transition: transform 0.3s ease;
+}
+
+.lightbox.active img {
+  transform: scale(1);
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: white;
+  font-size: 3rem;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.lightbox.active .lightbox-close {
+  opacity: 1;
+}

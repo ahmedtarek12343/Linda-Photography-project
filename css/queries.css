@@ -1,0 +1,183 @@
+/* MEDIA QUERY MANAGER */
+/*
+0 - 600px:        phone
+600 - 900px:      tablet portrait
+900 - 1200px:     tablet landscape
+[1200 - 1800px]: normal desktop
+*/
+
+/* tab landscape */
+@media only screen and (width<=75em) {
+  html {
+    font-size: 57%;
+  }
+}
+
+/* tab portrait */
+@media only screen and (width<=57.5em) {
+  html {
+    font-size: 50%;
+  }
+  .grid--2--col,
+  .grid--3--col {
+    grid-template-columns: 1fr;
+  }
+
+  .ri-menu-line,
+  .ri-close-large-line {
+    display: block;
+    cursor: pointer;
+    z-index: 1001;
+    font-size: 3rem;
+    color: #111111;
+  }
+
+  .nav {
+    position: relative;
+  }
+
+  .paragraph {
+    margin-top: 25rem;
+  }
+
+  h1 {
+    font-size: 15rem;
+  }
+
+  .heading_secondary {
+    font-size: 2rem;
+  }
+
+  .after-hero-beach {
+    align-self: flex-start;
+  }
+
+  .behind-lens-p {
+    width: 100%;
+  }
+
+  .section-behind-lens .link__container {
+    justify-content: end;
+  }
+
+  .img-p__img {
+    height: 50rem;
+  }
+
+  .intersection-img-3 {
+    height: 120rem;
+    object-position: center;
+  }
+
+  .footer-logo {
+    width: 45%;
+  }
+
+  .input-container {
+    flex-direction: column;
+  }
+
+  .sign-up-heading {
+    font-size: 2rem;
+    max-width: 100% !important;
+    display: block;
+  }
+
+  .sign-up-paragraph {
+    font-size: 1rem;
+  }
+
+  .input-container > * {
+    width: 100%;
+  }
+
+  .container {
+    padding: 0 2rem;
+  }
+
+  .intersection-heading {
+    font-size: 3rem;
+  }
+
+  .frames-heading {
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    font-size: 3em;
+  }
+
+  .footer-grid {
+    column-gap: 5rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .col:first-child {
+    grid-column: 1/-1;
+    margin-bottom: 6rem;
+  }
+
+  .links__list {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 8rem 2rem 2rem;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    transition: all 0.3s ease-in-out;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+    font-size: 3rem;
+  }
+
+  .link__item {
+    text-align: center;
+  }
+
+  .show-menu {
+    left: 0;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .section-about-hero .paragraph__about {
+    margin-top: 20rem;
+  }
+
+  .section-grid-images .grid-images {
+    width: 100%;
+    height: 100%;
+    padding: 0 5rem;
+    grid-template-areas:
+      "a a a a"
+      "b b c c"
+      "b b c c"
+      "d d d d"
+      "d d d d"
+      "f f e e"
+      "f f e e";
+  }
+  .section-contact-us::before {
+    background-position: 41% 15% !important;
+    clip-path: polygon(100% 0, 0 0, 100% 74%) !important;
+    background-size: cover !important;
+  }
+
+  .section-contact-form .two-col-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* phones */
+@media only screen and (width<=37.5em) {
+  h1 {
+    font-size: 9.2rem;
+  }
+
+  .section-hero .heading_secondary {
+    font-size: 2rem;
+  }
+}

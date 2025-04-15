@@ -1,0 +1,154 @@
+.section-contact-us {
+  padding-top: 10rem;
+  padding-bottom: 13rem;
+  border-bottom: 3px solid #000;
+}
+
+.section-contact-us::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 8%;
+  left: 0;
+  z-index: -1;
+  background-image: linear-gradient(#ffffff55, #ffffff9e),
+    url("../img/pexels-duhews-dfbas-1095146367-22134716.jpg");
+  background-position: 0 20%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  clip-path: circle(50% at 90% 25%);
+}
+
+.contact-us-heading {
+  font-size: 5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000;
+  transform: scaleX(1.1);
+  transform-origin: left;
+}
+
+.contact-us-paragraph {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #000;
+  margin-top: 3rem;
+}
+
+.contact-us-heading-4 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #000;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-us-paragraph:last-child {
+  margin-top: 5rem;
+  margin-bottom: 4rem;
+}
+
+.contact-us-heading-4 + .link {
+  font-size: 2rem;
+  font-weight: 200;
+  color: #000;
+  text-decoration: none;
+}
+
+/* Contact Form */
+
+.section-contact-form {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  border-bottom: 3px solid #000;
+}
+
+.contact-form-heading {
+  font-size: 5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000;
+  margin-bottom: 5rem;
+}
+
+.two-col-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 5rem;
+}
+
+.right-col-grid {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.flex-form-group {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.form-label {
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: #000;
+}
+
+.flex-form-group .form-group {
+  width: 50%;
+}
+
+.form-input {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-bottom: 2px solid #000;
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #000;
+}
+
+
+.form-input:focus {
+  outline: none;
+}
+
+.btn-submit {
+  color: #000;
+  padding: 1rem 0;
+  border: none;
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-weight: 300;
+  cursor: pointer;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.btn-submit:hover {
+  color: #000000b0;
+}
+
+.btn-submit::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  transition: all 0.3s ease;
+}
+
+.btn-submit:hover::after {
+  width: 100%;
+}
